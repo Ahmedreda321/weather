@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:weather_app/cubit/get_weather_cubit.dart';
 import 'package:weather_app/widgets/weather_screen_widgets/status_column.dart';
 
 // ignore: camel_case_types
@@ -7,9 +9,11 @@ class WeatherStats extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var weatherModel = BlocProvider.of<GetWeatherCubit>(context).weatherModel;
+
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
-      child: GridView.builder(
+      child: GridView(
         physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -17,12 +21,24 @@ class WeatherStats extends StatelessWidget {
           crossAxisSpacing: 10.0,
           childAspectRatio: 2,
         ),
-        itemCount: statusItems.length,
-        itemBuilder: (context, index) {
-          final item = statusItems[index];
-          return buildStatusColumn(
-              title: item['title']!, value: item['value']!);
-        },
+        children: [
+          buildStatusColumn(
+            title: 'Max Temperature',
+            value: weatherModel!.maxtemp.toString(),
+          ),
+          buildStatusColumn(
+            title: 'Min Temperature',
+            value: weatherModel.mintemp.toString(),
+          ),
+          buildStatusColumn(
+            title: 'Wind',
+            value: weatherModel.windStatus.toString(),
+          ),
+          buildStatusColumn(
+            title: 'Pressure',
+            value: weatherModel.airPressure.toString(),
+          ),
+        ],
       ),
     );
   }

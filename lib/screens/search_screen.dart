@@ -9,6 +9,7 @@ class SearchPage extends StatelessWidget {
     return GestureDetector(
       onTap: () => FocusScope.of(context).unfocus(),
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         body: Container(
           padding: const EdgeInsets.only(top: 120),
           constraints: const BoxConstraints.expand(),

@@ -1,10 +1,18 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 class TemperatureWidget extends StatelessWidget {
-  const TemperatureWidget({super.key, required this.screenSize});
+  const TemperatureWidget({
+    super.key,
+    required this.screenSize,
+    required this.maintemp,
+  });
   final Size screenSize;
+  final String maintemp;
   @override
-  Widget build(BuildContext context) {
+  Widget build(
+    BuildContext context,
+  ) {
     return Container(
       padding: const EdgeInsets.all(8),
       width: screenSize.width * 0.7, // Responsive width
@@ -25,13 +33,15 @@ class TemperatureWidget extends StatelessWidget {
         children: [
           Image.asset(
             'assets/images/image 4.png',
-            height: screenSize.width * 0.16, // Responsive image size
-            width: screenSize.width * 0.16, // Responsive image size
+            height: screenSize.width * 0.16,
+            width: screenSize.width * 0.16,
           ),
           const SizedBox(height: 10),
-          const Text(
-            '15°C',
-            style: TextStyle(
+          Text(
+            maintemp,
+            maxLines: 1,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(
               fontSize: 85,
               color: Colors.black,
               fontFamily: 'Montserrat',

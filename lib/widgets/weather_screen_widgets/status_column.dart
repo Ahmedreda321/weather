@@ -17,7 +17,7 @@ class buildStatusColumn extends StatelessWidget {
             title,
             style: const TextStyle(
               fontFamily: 'Montserrat',
-              fontSize: 14.0,
+              fontSize: 16.0,
               fontWeight: FontWeight.bold,
               color: Colors.white,
             ),
@@ -26,7 +26,7 @@ class buildStatusColumn extends StatelessWidget {
             value,
             style: const TextStyle(
               fontFamily: 'Montserrat',
-              fontSize: 24.0,
+              fontSize: 27.0,
               fontWeight: FontWeight.w400,
               color: Colors.white,
             ),
@@ -37,12 +37,3 @@ class buildStatusColumn extends StatelessWidget {
     }
   }
 }
-
-List<Map<String, String>> statusItems = [
-  {'title': 'Max Temperature', 'value': '15°C'},
-  {'title': 'Min Temperature', 'value': '12°C'},
-  {'title': 'Wind status', 'value': '7 mph'},
-  {'title': 'Humidity', 'value': '85%'},
-  {'title': 'Visibility', 'value': '6.4 miles'},
-  {'title': 'Air pressure', 'value': '998 mb'},
-];

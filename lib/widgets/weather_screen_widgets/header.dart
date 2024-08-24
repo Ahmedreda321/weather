@@ -15,6 +15,8 @@ class buildHeaderText extends StatelessWidget {
     return Text(
       text,
       textAlign: TextAlign.center,
+      maxLines: 2,
+      overflow: TextOverflow.ellipsis,
       style: TextStyle(
         color: Colors.white,
         fontSize: fontSize,
