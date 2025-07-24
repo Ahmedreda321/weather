@@ -47,7 +47,7 @@ class HomePage extends StatelessWidget {
           } else if (stat is GetWeatherLoading) {
             return const WeatherShimmerScreen();
           } else if (stat is GetWeatherloded) {
-            return WeatherScreen();
+            return const WeatherScreen();
           } else {
             return const Center(
               child: Text(
