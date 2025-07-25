@@ -16,4 +16,8 @@ class CacheException extends AppException {
  const CacheException([super.message = 'Cache Error', super.statusCode = 500]);
 }
 
+class LocationException extends AppException{
+  const LocationException([super.message = "Location Error", super.statusCode = 500]);
+}
+
 

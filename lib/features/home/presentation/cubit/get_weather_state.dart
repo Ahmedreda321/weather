@@ -1,15 +1,16 @@
-part of 'get_weather_cubit.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-@immutable
-sealed class GetWeatherState {}
+import '../models/weather.dart';
 
-final class GetWeatherInitial extends GetWeatherState {}
+part 'get_weather_state.freezed.dart';
 
-final class GetWeatherLoading extends GetWeatherState {}
+@freezed
+class GetWeatherState<T> with _$GetWeatherState<T> {
+  const factory GetWeatherState.initial() = _Initial;
 
-final class GetWeatherloded extends GetWeatherState {}
+  const factory GetWeatherState.loading() = Loading;
 
-final class GetWeatherError extends GetWeatherState {
-  final String error;
-  GetWeatherError({required this.error});
+  const factory GetWeatherState.loaded(Weather data) = Loaded;
+
+  const factory GetWeatherState.error(String message) = Error;
 }
