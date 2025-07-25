@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/features/home/presentation/widgets/search_screen_widgets/close_button.dart';
-import 'package:weather_app/features/home/presentation/widgets/search_screen_widgets/search_text_field.dart';
 
+import 'close_button.dart';
+import 'search_text_field.dart';
 class SearchContainer extends StatelessWidget {
   const SearchContainer({super.key});
 

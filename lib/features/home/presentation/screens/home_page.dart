@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weather_app/features/home/presentation/cubit/get_weather_cubit.dart';
-import 'package:weather_app/features/home/presentation/screens/search_screen.dart';
-import 'package:weather_app/features/home/presentation/screens/weather_screen.dart';
-import 'package:weather_app/features/home/presentation/widgets/navigation.dart';
-import 'package:weather_app/features/home/presentation/widgets/shimmer_widget.dart';
+
+import '../cubit/get_weather_cubit.dart';
+import '../widgets/navigation.dart';
+import '../widgets/shimmer_widget.dart';
+import 'search_screen.dart';
+import 'weather_screen.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({super.key});

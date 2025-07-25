@@ -3,23 +3,23 @@ import 'package:flutter/material.dart';
 
 
 extension NavigationExtensions on BuildContext {
- // Push a new page onto the stack
+ /// Push a new page onto the stack
  void push(Widget page) =>
      Navigator.of(this).push(MaterialPageRoute(builder: (_) => page));
 
 
- // Push a named route onto the stack
+ /// Push a named route onto the stack
  Future<T?> pushNamed<T>(String routeName, {Object? arguments}) =>
      Navigator.of(this).pushNamed<T>(routeName, arguments: arguments);
 
 
- // Replace the current route with a new one
+ /// Replace the current route with a new one
  Future<T?> pushReplacement<T, TO>(Widget page) => Navigator.of(
    this,
  ).pushReplacement(MaterialPageRoute(builder: (_) => page));
 
 
- // Replace the current route with a named route
+ /// Replace the current route with a named route
  Future<T?> pushReplacementNamed<T, TO>(
    String routeName, {
    Object? arguments,
@@ -28,30 +28,30 @@ extension NavigationExtensions on BuildContext {
  ).pushReplacementNamed<T, TO>(routeName, arguments: arguments);
 
 
- // Pop the current route off the stack
+ /// Pop the current route off the stack
  void back() => Navigator.of(this).pop();
 
 
- // Pop until the predicate returns true
+ /// Pop until the predicate returns true
  void popUntil(RoutePredicate predicate) =>
      Navigator.of(this).popUntil(predicate);
 
 
- // Pop the current route and push a new route
+ /// Pop the current route and push a new route
  Future<T?> popAndPushNamed<T, TO>(String routeName, {Object? arguments}) =>
      Navigator.of(
        this,
      ).popAndPushNamed<T, TO>(routeName, arguments: arguments);
 
 
- // Push a new route and remove all previous routes
+ /// Push a new route and remove all previous routes
  Future<T?> pushAndRemoveUntil<T>(Widget page, RoutePredicate predicate) =>
      Navigator.of(
        this,
      ).pushAndRemoveUntil(MaterialPageRoute(builder: (_) => page), predicate);
 
 
- // Push a named route and remove all previous routes
+ /// Push a named route and remove all previous routes
  Future<T?> pushNamedAndRemoveUntil<T>(
    String routeName, {
    Object? arguments,
@@ -62,16 +62,16 @@ extension NavigationExtensions on BuildContext {
  );
 
 
- // Try to pop the route; returns true if successful, otherwise false
+ /// Try to pop the route; returns true if successful, otherwise false
  Future<bool> maybePop() => Navigator.of(this).maybePop();
 
 
- // Replace the current route with a new route using a custom route
+ /// Replace the current route with a new route using a custom route
  Future<T?> replaceWithCustomRoute<T, TO>(Route<T> route) =>
      Navigator.of(this).pushReplacement(route);
 
 
- // Push a custom route onto the stack
+ /// Push a custom route onto the stack
  Future<T?> pushCustomRoute<T>(Route<T> route) =>
      Navigator.of(this).push(route);
 }

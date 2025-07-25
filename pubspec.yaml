@@ -1,7 +1,7 @@
-name: weather_app
-description: "A new Flutter project."
+name: sky_scan
+description: "My Weather App"
 
-publish_to: 'none' 
+publish_to: 'none'
 
 version: 1.0.0+1
 
@@ -9,24 +9,51 @@ environment:
   sdk: '>=3.4.3 <4.0.0'
 
 dependencies:
+  cupertino_icons: ^1.0.6
+
   flutter:
     sdk: flutter
 
-  cupertino_icons: ^1.0.6
-  dio: ^5.6.0
+  # for state management  
   flutter_bloc: ^8.1.6
 
+  # for functional programming 
+  dartz: ^0.10.1
+
+  # for responsive design
+  flutter_screenutil: ^5.9.3
+
+  # for dependency injection
+  get_it: ^8.0.3
+
+  # for network
+  internet_connection_checker: ^3.0.1
+  pretty_dio_logger: ^1.4.0
+  retrofit: ^4.6.0
+  dio: ^5.8.0+1
+
+  # for local storage
+  shared_preferences: ^2.5.3
+
+  # for state serialization
+  freezed: ^2.4.2
+  freezed_annotation: ^2.4.1
+
+  # for get location
+  location: ^8.0.1
 
 dev_dependencies:
+  flutter_lints: ^3.0.0
   flutter_test:
     sdk: flutter
-
-  flutter_lints: ^3.0.0
+  
+  # for code generation
+  retrofit_generator: 
+  build_runner: 
 
 flutter:
 
   uses-material-design: true
-
 
   assets:
     - assets/images/

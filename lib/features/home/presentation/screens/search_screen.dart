@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/features/home/presentation/widgets/search_screen_widgets/search_container.dart';
+
+import '../widgets/search_screen_widgets/search_container.dart';
 
 class SearchPage extends StatelessWidget {
   const SearchPage({super.key});

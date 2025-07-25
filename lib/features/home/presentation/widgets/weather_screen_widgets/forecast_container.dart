@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app/features/home/presentation/widgets/weather_screen_widgets/daily_forecast_card.dart';
+
+import 'daily_forecast_card.dart';
 
 class ForecastContainer extends StatelessWidget {
   const ForecastContainer({super.key});

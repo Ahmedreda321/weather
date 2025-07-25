@@ -1,33 +1,10 @@
-// ignore_for_file: depend_on_referenced_packages
-
-import 'package:bloc/bloc.dart';
-import 'package:dio/dio.dart';
-import 'package:meta/meta.dart';
-import 'package:weather_app/home/Services/data_sev.dart';
-import 'package:weather_app/features/home/presentation/models/weather_model.dart';
-
+import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 part 'get_weather_state.dart';
 
 class GetWeatherCubit extends Cubit<GetWeatherState> {
   GetWeatherCubit() : super(GetWeatherInitial());
-  WeatherModel? weatherModel;
   void fetchWeather({required String city}) async {
-    emit(
-      GetWeatherLoading(),
-    );
-    try {
-      weatherModel = await DataServ(
-        dio: Dio(),
-      ).getData(city: city);
-      emit(
-        GetWeatherloded(),
-      );
-    } on Exception catch (e) {
-      emit(
-        GetWeatherError(
-          error: e.toString(),
-        ),
-      );
-    }
+   
   }
 }
