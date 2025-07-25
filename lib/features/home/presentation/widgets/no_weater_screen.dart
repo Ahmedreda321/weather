@@ -1,8 +1,7 @@
-// ignore: file_names
 import 'package:flutter/material.dart';
 
-class Noweaterscreen extends StatelessWidget {
-  const Noweaterscreen({super.key});
+class Noweather extends StatelessWidget {
+  const Noweather({super.key});
 
   @override
   Widget build(BuildContext context) {

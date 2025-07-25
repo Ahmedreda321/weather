@@ -3,8 +3,8 @@
 import 'package:bloc/bloc.dart';
 import 'package:dio/dio.dart';
 import 'package:meta/meta.dart';
-import 'package:weather_app/Services/data_sev.dart';
-import 'package:weather_app/models/weather_model.dart';
+import 'package:weather_app/home/Services/data_sev.dart';
+import 'package:weather_app/features/home/presentation/models/weather_model.dart';
 
 part 'get_weather_state.dart';
 

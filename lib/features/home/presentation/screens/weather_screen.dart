@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:weather_app/cubit/get_weather_cubit.dart';
+import 'package:weather_app/features/home/presentation/cubit/get_weather_cubit.dart';
 import 'package:weather_app/main.dart';
-import 'package:weather_app/widgets/weather_screen_widgets/header.dart';
-import 'package:weather_app/widgets/weather_screen_widgets/temperature_widget.dart';
-import 'package:weather_app/widgets/weather_screen_widgets/weather_stats.dart';
+import 'package:weather_app/features/home/presentation/widgets/weather_screen_widgets/header.dart';
+import 'package:weather_app/features/home/presentation/widgets/weather_screen_widgets/temperature_widget.dart';
+import 'package:weather_app/features/home/presentation/widgets/weather_screen_widgets/weather_stats.dart';
 
 class WeatherScreen extends StatelessWidget {
   const WeatherScreen({super.key});

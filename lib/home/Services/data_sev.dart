@@ -1,5 +1,5 @@
 import 'package:dio/dio.dart';
-import 'package:weather_app/models/weather_model.dart';
+import 'package:weather_app/features/home/presentation/models/weather_model.dart';
 
 class DataServ {
   Dio dio;
@@ -22,4 +22,5 @@ class DataServ {
       throw Exception(e);
     }
   }
-}
+    
+}// 
