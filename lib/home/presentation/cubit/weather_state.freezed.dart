@@ -3,7 +3,7 @@
 // ignore_for_file: type=lint
 // ignore_for_file: unused_element, deprecated_member_use, deprecated_member_use_from_same_package, use_function_type_syntax_for_parameters, unnecessary_const, avoid_init_to_null, invalid_override_different_default_values_named, prefer_expression_function_bodies, annotate_overrides, invalid_annotation_target, unnecessary_question_mark
 
-part of 'get_weather_state.dart';
+part of 'weather_state.dart';
 
 // **************************************************************************
 // FreezedGenerator
@@ -15,7 +15,7 @@ final _privateConstructorUsedError = UnsupportedError(
     'It seems like you constructed your class using `MyClass._()`. This constructor is only meant to be used by freezed and you are not supposed to need it nor use it.\nPlease check the documentation here for more information: https://github.com/rrousselGit/freezed#adding-getters-and-methods-to-our-models');
 
 /// @nodoc
-mixin _$GetWeatherState<T> {
+mixin _$WeatherState<T> {
   @optionalTypeArgs
   TResult when<TResult extends Object?>({
     required TResult Function() initial,
@@ -69,23 +69,23 @@ mixin _$GetWeatherState<T> {
 }
 
 /// @nodoc
-abstract class $GetWeatherStateCopyWith<T, $Res> {
-  factory $GetWeatherStateCopyWith(
-          GetWeatherState<T> value, $Res Function(GetWeatherState<T>) then) =
-      _$GetWeatherStateCopyWithImpl<T, $Res, GetWeatherState<T>>;
+abstract class $WeatherStateCopyWith<T, $Res> {
+  factory $WeatherStateCopyWith(
+          WeatherState<T> value, $Res Function(WeatherState<T>) then) =
+      _$WeatherStateCopyWithImpl<T, $Res, WeatherState<T>>;
 }
 
 /// @nodoc
-class _$GetWeatherStateCopyWithImpl<T, $Res, $Val extends GetWeatherState<T>>
-    implements $GetWeatherStateCopyWith<T, $Res> {
-  _$GetWeatherStateCopyWithImpl(this._value, this._then);
+class _$WeatherStateCopyWithImpl<T, $Res, $Val extends WeatherState<T>>
+    implements $WeatherStateCopyWith<T, $Res> {
+  _$WeatherStateCopyWithImpl(this._value, this._then);
 
   // ignore: unused_field
   final $Val _value;
   // ignore: unused_field
   final $Res Function($Val) _then;
 
-  /// Create a copy of GetWeatherState
+  /// Create a copy of WeatherState
   /// with the given fields replaced by the non-null parameter values.
 }
 
@@ -98,13 +98,13 @@ abstract class _$$InitialImplCopyWith<T, $Res> {
 
 /// @nodoc
 class __$$InitialImplCopyWithImpl<T, $Res>
-    extends _$GetWeatherStateCopyWithImpl<T, $Res, _$InitialImpl<T>>
+    extends _$WeatherStateCopyWithImpl<T, $Res, _$InitialImpl<T>>
     implements _$$InitialImplCopyWith<T, $Res> {
   __$$InitialImplCopyWithImpl(
       _$InitialImpl<T> _value, $Res Function(_$InitialImpl<T>) _then)
       : super(_value, _then);
 
-  /// Create a copy of GetWeatherState
+  /// Create a copy of WeatherState
   /// with the given fields replaced by the non-null parameter values.
 }
 
@@ -115,7 +115,7 @@ class _$InitialImpl<T> implements _Initial<T> {
 
   @override
   String toString() {
-    return 'GetWeatherState<$T>.initial()';
+    return 'WeatherState<$T>.initial()';
   }
 
   @override
@@ -202,7 +202,7 @@ class _$InitialImpl<T> implements _Initial<T> {
   }
 }
 
-abstract class _Initial<T> implements GetWeatherState<T> {
+abstract class _Initial<T> implements WeatherState<T> {
   const factory _Initial() = _$InitialImpl<T>;
 }
 
@@ -215,13 +215,13 @@ abstract class _$$LoadingImplCopyWith<T, $Res> {
 
 /// @nodoc
 class __$$LoadingImplCopyWithImpl<T, $Res>
-    extends _$GetWeatherStateCopyWithImpl<T, $Res, _$LoadingImpl<T>>
+    extends _$WeatherStateCopyWithImpl<T, $Res, _$LoadingImpl<T>>
     implements _$$LoadingImplCopyWith<T, $Res> {
   __$$LoadingImplCopyWithImpl(
       _$LoadingImpl<T> _value, $Res Function(_$LoadingImpl<T>) _then)
       : super(_value, _then);
 
-  /// Create a copy of GetWeatherState
+  /// Create a copy of WeatherState
   /// with the given fields replaced by the non-null parameter values.
 }
 
@@ -232,7 +232,7 @@ class _$LoadingImpl<T> implements Loading<T> {
 
   @override
   String toString() {
-    return 'GetWeatherState<$T>.loading()';
+    return 'WeatherState<$T>.loading()';
   }
 
   @override
@@ -319,7 +319,7 @@ class _$LoadingImpl<T> implements Loading<T> {
   }
 }
 
-abstract class Loading<T> implements GetWeatherState<T> {
+abstract class Loading<T> implements WeatherState<T> {
   const factory Loading() = _$LoadingImpl<T>;
 }
 
@@ -334,13 +334,13 @@ abstract class _$$LoadedImplCopyWith<T, $Res> {
 
 /// @nodoc
 class __$$LoadedImplCopyWithImpl<T, $Res>
-    extends _$GetWeatherStateCopyWithImpl<T, $Res, _$LoadedImpl<T>>
+    extends _$WeatherStateCopyWithImpl<T, $Res, _$LoadedImpl<T>>
     implements _$$LoadedImplCopyWith<T, $Res> {
   __$$LoadedImplCopyWithImpl(
       _$LoadedImpl<T> _value, $Res Function(_$LoadedImpl<T>) _then)
       : super(_value, _then);
 
-  /// Create a copy of GetWeatherState
+  /// Create a copy of WeatherState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -366,7 +366,7 @@ class _$LoadedImpl<T> implements Loaded<T> {
 
   @override
   String toString() {
-    return 'GetWeatherState<$T>.loaded(data: $data)';
+    return 'WeatherState<$T>.loaded(data: $data)';
   }
 
   @override
@@ -380,7 +380,7 @@ class _$LoadedImpl<T> implements Loaded<T> {
   @override
   int get hashCode => Object.hash(runtimeType, data);
 
-  /// Create a copy of GetWeatherState
+  /// Create a copy of WeatherState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
@@ -463,12 +463,12 @@ class _$LoadedImpl<T> implements Loaded<T> {
   }
 }
 
-abstract class Loaded<T> implements GetWeatherState<T> {
+abstract class Loaded<T> implements WeatherState<T> {
   const factory Loaded(final Weather data) = _$LoadedImpl<T>;
 
   Weather get data;
 
-  /// Create a copy of GetWeatherState
+  /// Create a copy of WeatherState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$LoadedImplCopyWith<T, _$LoadedImpl<T>> get copyWith =>
@@ -486,13 +486,13 @@ abstract class _$$ErrorImplCopyWith<T, $Res> {
 
 /// @nodoc
 class __$$ErrorImplCopyWithImpl<T, $Res>
-    extends _$GetWeatherStateCopyWithImpl<T, $Res, _$ErrorImpl<T>>
+    extends _$WeatherStateCopyWithImpl<T, $Res, _$ErrorImpl<T>>
     implements _$$ErrorImplCopyWith<T, $Res> {
   __$$ErrorImplCopyWithImpl(
       _$ErrorImpl<T> _value, $Res Function(_$ErrorImpl<T>) _then)
       : super(_value, _then);
 
-  /// Create a copy of GetWeatherState
+  /// Create a copy of WeatherState
   /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
@@ -518,7 +518,7 @@ class _$ErrorImpl<T> implements Error<T> {
 
   @override
   String toString() {
-    return 'GetWeatherState<$T>.error(message: $message)';
+    return 'WeatherState<$T>.error(message: $message)';
   }
 
   @override
@@ -532,7 +532,7 @@ class _$ErrorImpl<T> implements Error<T> {
   @override
   int get hashCode => Object.hash(runtimeType, message);
 
-  /// Create a copy of GetWeatherState
+  /// Create a copy of WeatherState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   @override
@@ -615,12 +615,12 @@ class _$ErrorImpl<T> implements Error<T> {
   }
 }
 
-abstract class Error<T> implements GetWeatherState<T> {
+abstract class Error<T> implements WeatherState<T> {
   const factory Error(final String message) = _$ErrorImpl<T>;
 
   String get message;
 
-  /// Create a copy of GetWeatherState
+  /// Create a copy of WeatherState
   /// with the given fields replaced by the non-null parameter values.
   @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ErrorImplCopyWith<T, _$ErrorImpl<T>> get copyWith =>

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 
-// ignore: camel_case_types
-class buildStatusColumn extends StatelessWidget {
-  const buildStatusColumn(
+class StatusColumn extends StatelessWidget {
+  const StatusColumn(
       {super.key, required this.title, required this.value});
 
   final String title;

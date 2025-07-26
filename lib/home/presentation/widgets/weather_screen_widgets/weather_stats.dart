@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../cubit/get_weather_cubit.dart';
 import 'status_column.dart';
 
 class WeatherStats extends StatelessWidget {
@@ -9,8 +7,6 @@ class WeatherStats extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var weatherModel = BlocProvider.of<GetWeatherCubit>(context).weatherModel;
-
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 20),
       child: GridView(
@@ -22,21 +18,21 @@ class WeatherStats extends StatelessWidget {
           childAspectRatio: 2,
         ),
         children: [
-          buildStatusColumn(
+          StatusColumn(
             title: 'Max Temperature',
-            value: weatherModel!.maxtemp.toString(),
+            value: ,
           ),
-          buildStatusColumn(
+          StatusColumn(
             title: 'Min Temperature',
-            value: weatherModel.mintemp.toString(),
+            value:,
           ),
-          buildStatusColumn(
+          StatusColumn(
             title: 'Wind',
-            value: weatherModel.windStatus.toString(),
+            value: ,
           ),
-          buildStatusColumn(
+          StatusColumn(
             title: 'Pressure',
-            value: weatherModel.airPressure.toString(),
+            value: ,
           ),
         ],
       ),

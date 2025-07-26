@@ -3,7 +3,7 @@
 import 'package:dio/dio.dart';
 
 import '../constants/app_strings.dart';
-import '../utils/errors/failures.dart';
+import '../errors/failures.dart';
 
 
 

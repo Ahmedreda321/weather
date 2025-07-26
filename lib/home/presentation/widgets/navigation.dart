@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-// Define a reusable SlideTransition widget
 class SlideTransitionPage extends PageRouteBuilder {
   final Widget page;
   @override

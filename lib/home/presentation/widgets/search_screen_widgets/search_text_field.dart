@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
-import '../../cubit/get_weather_cubit.dart';
+import '../../cubit/weather_cubit.dart';
 
 class SearchTextField extends StatelessWidget {
   const SearchTextField({super.key});
@@ -9,13 +9,16 @@ class SearchTextField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      controller: context.read<WeatherCubit>().searchController,
       onChanged: (value) {},
       onSubmitted: (value) {
-        var getWeatherCubit = BlocProvider.of<GetWeatherCubit>(context);
-        getWeatherCubit.fetchWeather(city: value);
+        if (value.isNotEmpty) {
+          context.read<WeatherCubit>().fetchWeather(value);
+        }
         Navigator.pop(context);
       },
-      style: _textFieldTextStyle,
+      
+
       decoration: InputDecoration(
         hintText: 'SEARCH LOCATION',
         hintStyle: _hintTextStyle,
@@ -33,12 +36,7 @@ class SearchTextField extends StatelessWidget {
     );
   }
 
-  static const TextStyle _textFieldTextStyle = TextStyle(
-    fontSize: 16.0,
-    fontWeight: FontWeight.bold,
-    color: Colors.black,
-    fontFamily: 'Montserrat',
-  );
+ 
 
   static const TextStyle _hintTextStyle = TextStyle(
     fontSize: 14.0,

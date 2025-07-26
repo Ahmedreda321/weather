@@ -1,4 +1,3 @@
-// ignore_for_file: public_member_api_docs, sort_constructors_first
 import 'package:flutter/material.dart';
 
 class TemperatureWidget extends StatelessWidget {
@@ -32,7 +31,7 @@ class TemperatureWidget extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset(
-            'assets/images/image 4.png',
+            'assets/images/image4.png',
             height: screenSize.width * 0.16,
             width: screenSize.width * 0.16,
           ),

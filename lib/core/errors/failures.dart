@@ -1,6 +1,6 @@
 
 
-import '../../constants/app_strings.dart';
+import '../constants/app_strings.dart';
 
 class Failure {
  final String message;

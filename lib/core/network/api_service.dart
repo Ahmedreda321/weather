@@ -2,7 +2,7 @@ import 'package:dio/dio.dart';
 import 'package:retrofit/error_logger.dart';
 import 'package:retrofit/http.dart';
 
-import '../../features/home/data/models/weather_reponse.dart';
+import '../../home/data/models/weather_reponse.dart';
 import 'api_constants.dart';
 
 part 'api_service.g.dart';
